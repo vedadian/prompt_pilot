@@ -1,0 +1,35 @@
+{
+    "name": "vedadian/prompt_pilot",
+    "description": "PromptPilot helps non-technical users achieve better results with AI by transforming their goals into optimized prompts. Instead of teaching prompt engineering, the application guides users toward successful outcomes through a simple, conversational experience.",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "slim/slim": "^4.15",
+        "slim/psr7": "^1.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PromptPilot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Behrooz Vedadian",
+            "email": "vedadian@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -d max_execution_time=0 -S localhost:5172 -t public"
+        ],
+	"lint": "phpstan analyse",
+	"format": "php-cs-fixer fix"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.2",
+        "friendsofphp/php-cs-fixer": "^3.95"
+    }
+}

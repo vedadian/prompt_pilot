@@ -1,0 +1,33 @@
+# Tokens
+*.token
+
+# Environment variables
+**/.env
+**/.env.*
+
+# Frontend
+**/node_modules/
+**/.vite/
+**/dist/
+
+# Backend
+**/vendor/
+**/.php-cs-fixer.cache
+
+# IDEs
+.vscode/
+.idea/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Archives
+*.zip
+
+# Logs
+logs/
+*.log
+*.pid
+pnpm-debug.log*

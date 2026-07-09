@@ -1,12 +1,53 @@
 # PromptPilot
 
-PromptPilot helps users create better AI prompts through guided conversations instead of requiring prompt engineering knowledge.
+PromptPilot is an AI-powered assistant that helps users create better prompts through guided conversations instead of requiring prompt engineering knowledge.
+
+> 🚧 **Status:** Early development
+
+## Repository Structure
+
+```text
+front/   React + TypeScript frontend
+back/    PHP + Slim backend
+docs/    Project documentation
+```
+
+## Getting Started
+
+### Frontend
+
+```bash
+cd front
+pnpm install
+pnpm dev
+```
+
+NOTE: It is currently a newly created `vite@latest` app
+
+### Backend
+
+```bash
+cd back
+composer install
+composer dev
+```
+
+NOTE: This is an empty `Hello world!` app
 
 ## Documentation
 
-- Product Overview → docs/product/overview.md
-- Case Study Checklist → docs/portfolio/case-study-checklist.md
+### Product
 
-## Status
+- Product Overview → `docs/product/overview.md`
 
-🚧 Early development
+### Architecture
+
+- Technology Decisions → `docs/architecture/technology-decisions.md`
+
+### Development
+
+- Repository Structure → `docs/development/repository-structure.md`
+
+## License
+
+MIT
