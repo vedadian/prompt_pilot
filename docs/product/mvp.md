@@ -25,32 +25,19 @@ The generated prompt is derived from that information model, **not** directly fr
 
 ---
 
-# User Types
+# Access Model
 
-## Visitor
+The MVP is designed around immediate use without authentication.
 
-Visitors can use the application immediately without signing in.
+Users can:
 
-Visitors can:
-
-* Start conversations
-* Complete guided conversations
-* Generate prompts
-* Copy prompts
-* Open prompts in ChatGPT
+* Start a conversation
+* Complete a guided conversation
+* Generate a prompt
+* Copy the prompt
+* Open the prompt in ChatGPT
 
 Conversation history is retained only for the current browser session.
-
----
-
-## Signed-in User
-
-Signed-in users have the same capabilities as visitors, plus:
-
-* Persistent conversation history
-* User avatar displayed beside their messages
-
-No other functionality differs in the MVP.
 
 ---
 
@@ -152,7 +139,6 @@ The generated prompt can be:
 
 * Copied
 * Opened in ChatGPT
-* Saved to history
 
 The conversation is complete.
 
@@ -315,9 +301,8 @@ Uploads are optional and context-dependent.
 
 The MVP is complete when:
 
-* Visitors can complete the full conversation without signing in.
-* Users can optionally sign in at any point.
-* Signed-in users retain their conversation history.
+* Users can complete the full conversation without signing in.
+* Conversation state is retained for the current browser session.
 * Every conversation follows the defined lifecycle.
 * A prompt category is identified for every conversation.
 * A dynamic information model is created for every conversation.
@@ -332,6 +317,9 @@ The MVP is complete when:
 
 The following are intentionally excluded from the MVP:
 
+* User accounts
+* Authentication
+* Persistent conversation history
 * Multiple AI providers
 * Team collaboration
 * Prompt sharing
@@ -346,4 +334,3 @@ The following are intentionally excluded from the MVP:
 * Public API
 * Native mobile applications
 * Offline support
-
