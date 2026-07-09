@@ -18,6 +18,10 @@
 .vscode/
 .idea/
 
+# LLMs
+.codex
+.agents
+
 # Operating systems
 .DS_Store
 Thumbs.db
